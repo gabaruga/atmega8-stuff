@@ -30,22 +30,6 @@ unsigned int point = 0;
 unsigned int segment = 0;
 
 ISR (TIMER0_OVF_vect) {
-	/*
-	unsigned int l1, l2, l3;
-	
-	l1 = msg[point];
-	
-	if (point == 8) {
-		l2 = msg[point+1];
-		l3 = msg[0];
-	} else if (point == 9) {
-		l2 = msg[0];
-		l3 = msg[1];
-	} else {
-		l2 = msg[point+1];
-		l3 = msg[point+2];
-	}
-	*/
 	
 	switch (segment) {
 		case 0: {
